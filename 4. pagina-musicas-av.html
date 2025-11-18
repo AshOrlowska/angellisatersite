@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Angellis Ater - Arsenal Sonoro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-primary/30 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Angellis Ater</h2>
+</div>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white hover:text-primary text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Músicas</a>
+<a class="text-white hover:text-primary text-sm font-medium leading-normal" href="#">Merch</a>
+<a class="text-white hover:text-primary text-sm font-medium leading-normal" href="#">Tour</a>
+<a class="text-white hover:text-primary text-sm font-medium leading-normal" href="#">Sobre</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">Carrinho (3)</span>
+</button>
+</div>
+<div class="lg:hidden text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+</header>
+<main class="flex-1 mt-8 px-4">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4 border-b-2 border-primary/50 mb-8">
+<p class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em] min-w-72 uppercase">ARSENAL SONORO</p>
+</div>
+<!-- SearchBar -->
+<div class="px-4 py-3 mb-8">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-stone-400 flex border-2 border-r-0 border-primary/30 bg-background-dark items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-1 focus:ring-primary border-2 border-l-0 border-primary/30 bg-background-dark h-full placeholder:text-stone-400 px-4 rounded-l-none text-base font-normal leading-normal" placeholder="Buscar por música ou álbum..." value=""/>
+</div>
+</label>
+</div>
+<!-- Music Cards Section -->
+<div class="grid grid-cols-1 gap-8">
+<!-- Card 1 -->
+<div class="p-4 @container border border-primary/20 rounded-xl bg-black/20">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start">
+<div class="w-full @xl:w-48 @xl:h-48 shrink-0 bg-center bg-no-repeat aspect-video @xl:aspect-square bg-cover rounded-lg" data-alt="Album art for Ecos do Abismo, featuring a dark, hellish landscape with demonic figures" style='background-image: url("https://cdn.gerasom.com/grs/music/cover/275f059a2f143afe93975137ab41c98f.png");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-4 py-4 @xl:px-4">
+<div>
+<p class="text-stone-400 text-sm font-normal leading-normal">Single: Burn For Eternity</p>
+<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Burn For Eternity</p>
+</div>
+<div class="flex items-end gap-3 justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-amber-400 text-xl font-bold leading-normal">R$ 18,99</p>
+<p class="text-stone-400 text-base font-normal leading-normal">Duração: 04:48</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-base font-bold leading-normal hover:bg-red-700 transition-colors">
+<span class="truncate">Comprar</span>
+</button>
+</div>
+<!-- MediaPlayer -->
+<div class="pt-2">
+<div class="flex flex-col gap-3 rounded-lg bg-black/30 px-4 py-3 border border-primary/20">
+<div class="flex items-center gap-4 overflow-hidden">
+<p class="text-white text-base font-bold leading-tight truncate flex-1">Prévia: Burn For Eternity</p>
+<button class="flex shrink-0 items-center justify-center rounded-full size-10 bg-primary text-white hover:bg-red-700 transition-colors">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+<div class="pt-1.5">
+<div class="flex h-4 items-center justify-center">
+<div class="flex-1 rounded-full bg-primary h-1.5"></div>
+<div class="relative"><div class="absolute -left-2 -top-2 size-4 rounded-full bg-primary border-2 border-background-dark"></div></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30"></div>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-stone-400 text-xs font-medium leading-normal tracking-[0.015em]">0:15</p>
+<p class="text-stone-400 text-xs font-medium leading-normal tracking-[0.015em]">01:10</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-4 @container border border-primary/20 rounded-xl bg-black/20">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start">
+<div class="w-full @xl:w-48 @xl:h-48 shrink-0 bg-center bg-no-repeat aspect-video @xl:aspect-square bg-cover rounded-lg" data-alt="Album art for Legado de Cinzas, showing a throne made of bones and fire" style='background-image: url("https://cdn.gerasom.com/grs/music/cover/9c5b25da96fdb6b763d7117207422cb9.png");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-4 py-4 @xl:px-4">
+<div>
+<p class="text-stone-400 text-sm font-normal leading-normal">Single: Pés Descalços Sobre o Fogo Negro</p>
+<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Pés Descalços Sobre o Fogo Negro</p>
+</div>
+<div class="flex items-end gap-3 justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-amber-400 text-xl font-bold leading-normal">R$ 18,99</p>
+<p class="text-stone-400 text-base font-normal leading-normal">Duração: 5:32</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-base font-bold leading-normal hover:bg-red-700 transition-colors">
+<span class="truncate">Comprar</span>
+</button>
+</div>
+<!-- MediaPlayer -->
+<div class="pt-2">
+<div class="flex flex-col gap-3 rounded-lg bg-black/30 px-4 py-3 border border-primary/20">
+<div class="flex items-center gap-4 overflow-hidden">
+<p class="text-white text-base font-bold leading-tight truncate flex-1">Prévia: Pés Descalços Sobre o Fogo Negro</p>
+<button class="flex shrink-0 items-center justify-center rounded-full size-10 bg-primary text-white hover:bg-red-700 transition-colors">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+<div class="pt-1.5">
+    <div class="flex h-4 items-center justify-center">
+    <div class="flex-1 rounded-full bg-primary h-1.5"></div>
+    <div class="relative"><div class="absolute -left-2 -top-2 size-4 rounded-full bg-primary border-2 border-background-dark"></div></div>
+    <div class="h-1.5 flex-1 rounded-full bg-primary/30"></div>
+    </div>
+    <div class="flex items-center justify-between">
+    <p class="text-stone-400 text-xs font-medium leading-normal tracking-[0.015em]">0:32</p>
+    <p class="text-stone-400 text-xs font-medium leading-normal tracking-[0.015em]">01:10</p>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Payment Section -->
+<div class="mt-16 mb-8 p-4 sm:p-8 border-2 border-primary/50 rounded-xl bg-black/20">
+<h3 class="text-3xl font-bold text-white mb-6 uppercase tracking-wider">Formas de Pagamento</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+<div class="flex flex-col items-center justify-center p-6 border border-amber-500/30 rounded-lg bg-black/30 hover:bg-black/50 transition-colors">
+<span class="material-symbols-outlined text-amber-400 text-5xl mb-2">qr_code_2</span>
+<p class="text-white font-semibold text-lg">PIX</p>
+</div>
+<div class="flex flex-col items-center justify-center p-6 border border-amber-500/30 rounded-lg bg-black/30 hover:bg-black/50 transition-colors">
+<span class="material-symbols-outlined text-amber-400 text-5xl mb-2">credit_card</span>
+<p class="text-white font-semibold text-lg">Cartão de Crédito/Débito</p>
+</div>
+<div class="flex flex-col items-center justify-center p-6 border border-amber-500/30 rounded-lg bg-black/30 hover:bg-black/50 transition-colors">
+<span class="material-symbols-outlined text-amber-400 text-5xl mb-2">barcode</span>
+<p class="text-white font-semibold text-lg">Boleto Bancário</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-12 border-t border-primary/30 text-center py-6 px-4">
+<p class="text-stone-400 text-sm">© 2025 Angellis Ater. Todos os direitos reservados.</p>
+<div class="flex justify-center gap-4 mt-4">
+<a class="text-stone-300 hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="text-stone-300 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-stone-300 hover:text-primary transition-colors" href="#">Spotify</a>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

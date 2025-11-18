@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Angellis Ater - Arsenal</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f20d0d",
+              "background-light": "#f8f5f5",
+              "background-dark": "#1a1a1a",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Angellis Ater</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Tour</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Music</a>
+<a class="text-white text-sm font-medium leading-normal border-b-2 border-primary" href="#">Store</a>
+</div>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-white/5 hover:bg-white/10 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">shopping_cart</span>
+</button>
+</div>
+<button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-white/5 hover:bg-white/10 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">menu</span>
+</button>
+</header>
+<!-- HeaderImage -->
+<div class="@container mt-8">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-[#231010] @[480px]:rounded-xl min-h-[218px] md:min-h-[280px]" data-alt="Black and red abstract artwork reminiscent of smoke and embers, promoting new album merchandise." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 45%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfpSzdjaq4_FPajG7LPOqzDTmHY5D0Pcpz9EkBxltu6zUKeYJIGLHrwjksDKf2y7aRwZbvro_lqnoG2PlFhM2EnvM-v-LMG6Ozbupz5OZLKQkKMtKdnp-Hbb3GIVnZuCZKaGyd_0HMpq34RbdOFSlzcyLl2MF4kTW-knAWx4ubA_nV33ONHTfr3LHECL_TBZuFQaybpPFGY_LaqHCAopowIwsrluNfMbGTtImkIHZ2RczCLrYMEUmFufBKjvD9T_eoGjNPFqSsoy5G");'>
+<div class="flex p-4 md:p-6"><p class="text-white tracking-light text-[28px] sm:text-4xl font-black leading-tight">New Album Merch Out Now</p></div>
+</div>
+</div>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4 mt-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-primary text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">ARSENAL</p>
+<p class="text-white/60 text-base font-normal leading-normal">Official Angellis Ater Merchandise</p>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-2 sm:gap-3 p-3 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-colors pl-4 pr-4">
+<p class="text-sm font-medium leading-normal">T-Shirts</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-colors pl-4 pr-4">
+<p class="text-sm font-medium leading-normal">Hoodies</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-colors pl-4 pr-4">
+<p class="text-sm font-medium leading-normal">CDs &amp; Vinyl</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-colors pl-4 pr-4">
+<p class="text-sm font-medium leading-normal">Accessories</p>
+</button>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A black t-shirt with a red and white graphic design hanging on a plain background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU8Dq13X-JV7RilPowwzBdZeVindOV5btfKTz2tKucD4CmlWdNiUXmRSvP7GCSicSNeqgikeZOHdzXoq_HZ1IOKMzDN3puouxgA9aljjuNUMBERaFIkAAVPuvNQefvOtDpfOGLndvxJwkhSvaI8cFviV8Q3kjRGjET70qK5ub98mM88owvCN-Bf3bY27W5YArnR1ElyNypnw8kLnDuZvrCcD-9vIMpYWQezukMGwRfnFDa-oSTkbthqsF_FRhFzvjY5sJklzxp9qaG"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">T-Shirt 'Crimson Dawn'</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€25.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A black t-shirt with a stylized band logo printed on the front, laid flat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFt8LblE_5-HixEzw5FrY3tx3YdSLVFWUbaXxUzSTpSvb0mFyV0C3h80W-VG4HqQDYH2nKtGKPl2GFKNKJH0GqzhZBWggU2_t8bD9e1St4lNxqGB8BvIDNx-P9WpmKwQgkgvFreF55p8vNjvTrb7g5FqqhuTP2jl1ZmZDqT-Da_42_g8996LjcsChrLMFKtqOmgzbEoqPu1IvqyARNk6D0tUD1Z9OBbEnKxNg1dvP1hD0tabcjPb9UBX_olUlkRQhcdM_8w66Oq-Mb"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">'Eternal Suffering' Album Tee</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€25.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A black hoodie with the band's logo embroidered on the chest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_gb_aeNaT3bN512MmjMgrhF0Rl6wbQM8Mdlkzaz0eNgEac2C_lWZsfMpNE_N0_iyFJ6HKo7-zsSzaH2s499ueMY7opsm8L-9XDzh749DM4fAdjFVQ1kV-suseyvsg3IpNYyYNcFR_dgnPjOy5LoazMrT5um11P6S5fkoX4Y1XbddNV03Bg4FelsVzoW_9zkp70F7BofIUMkybgeaEmEWuTZkUPUxcPc15CGsaAV7NUtwKYqY5p3j_ehT7BypT72Lo-xxkP7gv5uA2"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Angellis Ater Logo Hoodie</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€55.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A black vinyl record with a red and black album art cover." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnOt8ooQRi-HREsf412V6y7cqTFLbm1dSttMdyJleoD7KyqSQOF9ge6x17HIxNY-P-OAsCJvMuLuBG5IMrpSVBOk3MG5KlhBsyJAjxG89i-8-DMRX7t-p82I3IRKw2OP2eTGNtU5NwzhTcLXNKhwIjRkJsN6GW3w77dKz2HIf8SBHb0JwN-JroKAyzBHTZlilytZyBevEh78RwbMZSFDQKeVnvX474Bg0oNlfjr35YKDbIRn5bFdAcYSGn1aYwjp8ID2Jjsh_HnNiF"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">'Eternal Suffering' Vinyl</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€30.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A folded tour poster with aggressive, dark imagery and red text." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9mFEFvQmpI8KxmRaOYD6WHNtpu2Ay3oSNaxAdaBcd9TN3FQUaJ2s_3C49X4RHs96eDjcQ4WBsZXMqsdskPoW-yzib7zOYsq8sF82oAXLOQdjuXdDw8VeJ52diIVbKmuR24IL4ufm08Zfd0coVVxA7eyjVFQ4PWcGYXeRHHEEP6LVf7wRN9zGQTC6JBzMhYLU5SqOr8eSnOBE0Z5f4VMv-yc52mZ_oxiXD5IZkp-rGTEMccRydNbclp04nL9p_FnNrVmCWnBK_48-b"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Signed Band Poster</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€15.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A close-up of a black embroidered patch with a silver and red band logo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHeJ9kVWjz2DbFGkgB_6TUWqDfiNDSQHhllg_P3ksaqa8W6348izETTDrUiCiXMhjwsz266vRuv88a2q9w8V2iD-skai3yUO2FzrpH_qX4_asXHy4Y-INREveoyCqf7niLHvNHldmyqXnkfIR1m-5yYXpxdgYROMC868AtSotp6jOfJ3voUaAcKvO5BE0P4ZPwRPAGSc0s3S2__QizS56xURn7CpgC-lmJgFRWIENntTssCeFXDLJXOeaARx4YJlQLHuW9fcSYWY0d"/>
+</div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Embroidered Logo Patch</p>
+<p class="text-white/60 text-sm font-normal leading-normal">€8.00</p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-16 border-t border-solid border-primary/20 px-4 sm:px-10 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Angellis Ater</h2>
+</div>
+<div class="flex gap-4">
+<a class="text-white/60 hover:text-primary transition-colors" data-alt="Facebook icon" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-white/60 hover:text-primary transition-colors" data-alt="Instagram icon" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm-1.003 3.905c-1.03.046-1.694.21-2.227.427a3.41 3.41 0 00-1.222 1.222c-.217.533-.38 1.197-.427 2.227-.046 1.003-.056 1.32-.056 3.228s.01 2.225.056 3.228c.047 1.03.21 1.694.427 2.227a3.41 3.41 0 001.222 1.222c.533.217 1.197.38 2.227.427 1.003.046 1.32.056 3.228.056s2.225-.01 3.228-.056c1.03-.047 1.694-.21 2.227-.427a3.41 3.41 0 001.222-1.222c.217-.533.38-1.197.427-2.227.046-1.003.056-1.32.056-3.228s-.01-2.225-.056-3.228c-.047-1.03-.21-1.694-.427-2.227a3.41 3.41 0 00-1.222-1.222c-.533-.217-1.197-.38-2.227-.427C14.54 5.915 14.222 5.905 11.312 5.905zM12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zm0 6a3.75 3.75 0 110-7.5 3.75 3.75 0 010 7.5zM16.95 6.9a.9.9 0 100 1.8.9.9 0 000-1.8z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-white/60 hover:text-primary transition-colors" data-alt="X (formerly Twitter) icon" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M13.682 10.623 20.239 3h-1.613l-5.705 6.6-4.65-6.6H3l6.832 9.73L3 21h1.613l6.035-6.985 4.908 6.985h5.456l-7.15-10.392Zm-2.31 2.65-1.08-1.547L4.72 4.1h2.385l4.7 6.725 1.08 1.547 5.76 8.24h-2.385l-5.05-7.225Z"></path></svg>
+</a>
+</div>
+<p class="text-white/40 text-sm">© 2025 Angellis Ater. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

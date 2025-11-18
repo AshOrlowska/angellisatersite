@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Angellis Ater - Galeria</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-b-[#492222] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Angellis Ater</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Banda</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Galeria</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Agenda</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Loja</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded bg-primary hover:bg-red-700 transition-colors h-10 px-4 text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Contato</span>
+</button>
+</nav>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex flex-col gap-8 mt-12">
+<div class="flex flex-wrap justify-between gap-4 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">GALERIA</p>
+<p class="text-[#cb9090] text-base font-normal leading-normal">Registros visuais da nossa jornada de caos e fúria. Shows, bastidores e momentos capturados.</p>
+</div>
+</div>
+<div class="flex gap-2 sm:gap-3 p-3 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded bg-primary pl-4 pr-4 transition-transform hover:scale-105">
+<p class="text-white text-sm font-bold leading-normal">Shows</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded bg-[#492222] hover:bg-[#622f2f] pl-4 pr-4 transition-transform hover:scale-105">
+<p class="text-white text-sm font-medium leading-normal">Bastidores</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded bg-[#492222] hover:bg-[#622f2f] pl-4 pr-4 transition-transform hover:scale-105">
+<p class="text-white text-sm font-medium leading-normal">Vídeos</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded bg-[#492222] hover:bg-[#622f2f] pl-4 pr-4 transition-transform hover:scale-105">
+<p class="text-white text-sm font-medium leading-normal">Fotos Promocionais</p>
+</button>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="The band playing live on a dimly lit stage in São Paulo" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDRAuigSvNl3BkMt3Za_jqrf78_n5jsnDmk5CEDZur9yEmFn1OjD9jNp9ltI1TUDLPu4UyUCs0M6oKKCghkoge2D61XVRrJSujKysAzW3kew-Qo1sozPbOBdA2vbzJRINBcYOKWunLPT0uCKR1qQdg_0jwkhngC_4bajGyBDbdozWXNqaOTFW4zK5KLjjOmm2ppqecZUkv5nJa2kt83tIs1QhmkEWoZy8sniCklDUYwVZicPot8QsUaMfeBQ7V0uJb2wmbuKgBET6g");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Show em São Paulo, 2023</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="Behind the scenes shot of a recording studio with equipment" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAZ_HwyGUFQfuau2XEcWmna_xQXZFhC7wD6RId0u91eLs4BjvuBJJBO068Y2s6j4aRuxXUyNWPclpEaBwZPx4H4a6fJ4rROfzAHFB-K_QTR5vuUDJ1u56kMBgXzm0v-ILkXdsE-MKV8-aPK4BjifzhFDbkqwaWxxGj4S6LPEIlruaQxLLuRB_cAoHIfIbOaZVdoTnuP3OH43GIXsAHxpdZZM_8Qnr2korFNpSisNLBU6e7ySSC3wooLBp_Wr1mGt5aftBs3BzDZfIJ");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Bastidores da gravação</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end items-center p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="A frame from the music video 'Eternal Fire' with fire effects" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn3KX-iV6-rLAHDeTrOtJzIEs1or8BLtweCp6g-ws5a-a7MZCMRjYi4xkaX21sOAgI1-DrnumRwXFMdeLWVqSjFBlMCCQfHDHlbdcMfbOSEIYsYIcDszzz4q8iMjalSaF48EXmIED6vflUhXx7Ldxa2P50XqB5p03TIOdD3yZp-8djmfWn5gR9RDHTNh7wqmjlrEG3hbZVi6jdsQJ6lJFYoL40NE3Ey43wtU3T3dpEHP0t9a7Xrtlw4ZpTUlCAFUjrf1RFbncT-DrN");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<span class="material-symbols-outlined text-white text-5xl z-10 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">play_circle</span>
+<p class="text-white text-base font-bold leading-tight z-10 text-center">Clipe Oficial 'Eternal Fire'</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="Promotional band photo from 2024 with a dark, moody aesthetic" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB47JfA5wMok4x9YiGH-eHWQJ7QGiI0MNlAbjXeAx3j1PP-0T1KsjHgDbq0TjUhT5mdQGDJwI14QEy8BtWfG3W8QyTioHAa4YR1PrmYOlm_gJitXmmEMGvovY3htXOTceSIEA3Gz0UA7EPb941f5MNdW4P0-zJakvv8O6ozG7MNgwepNUGY8gqBNT0Vz0wx6Z84LYtMccIos0YY08xlALXdZZ1pSITBhZ0J8O5bWtM7s7_YJNFgTd_g3bCwCxOzWp7KRiwdMDmz_Duy");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Ensaio fotográfico 2024</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="The band performing on a large stage at Metal Fest with bright lights" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX_9TezZ5E-QB6AAluj3htSeEJ3GFZOn_VV9nKbbSb0mhYSzP61PmDBJ5Q2eo_BT8OPOYHR-MmKjTN_3RfubJEdzUic8hkAQp6IZz8OjNGHYtVMaaPdgApgKZW0Eazyie7SPCWMoY7LDRyrsJC_I0aIRM_5IktBvxiNQj3WnZ9bN7zGH2lLfnjCqa3IeyNoGADd97vxQrXa9s50DD0Frk7Z7uQjwYR9LI47Yih1dLhxnEnmnIwsiQ4DL6wF76gs_BYTSbzzqzqxvkS");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Performance no Metal Fest</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="A band member being interviewed backstage" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCii2x26kuVCiC6BZfeU19xVSXm9G7uUgD8_pw5mIb-KcrQLa3meFm7HFAt2Ow9mciUmZ4tlGwd4gSBWg5bIpYk9hmOtNOW1F7oian1EBqNC2mxOXQuysy_IXEqPOsAhFvlpRhFaNSV78exyRneVQNcw24ngP-v8pXzchtNiWqilZldKBACsdhSe_Zk4lfJFRZFy3pxKYAKfU3DKY-0V0dCqxqVN9wniXAdUwF0Ykx_lADja9FDfnEzTVTRI1iSY2rg9V4yzgnNa5ZJ");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Entrevista exclusiva</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="A dynamic shot of the concert in Rio de Janeiro with crowd visible" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuClxNMWx9NZrdR0wEVKQBOZL9OinyII7QJEoPI7ePRTSS-1PhL_nw35x0h2FjRoK_KvEBYXUSszHY9XeVAXXk0eYxoEqmPAt1fjaVStI-6UOSJDR57SBZV9zj6n10aHI-R3ZPrBKUO7w7P7lCdjY0tdsZ1JI055t8PROzG5c2EEzP3_8NPx4CJUG5UWmBISWi6jaeyGw_O1U1FPohwr8ZHRpRdWOyhFqKAbnqsqy2pdaJFodZPOAKzjLoarVF58aqvdaa6270twhFgh");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Show no Rio de Janeiro</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="Band members preparing their instruments before a show" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSt-MdicW8HSkQgS4CNAd52d6IQG4_trkbvFgPUkBV6hvLD9b23dN8wjc8AHW1bxR8OhM-z40t5t072M0qsEhICSJMqSB2GWh8OYbNfDpLdIfvpyBo596nzbrIoGSl0h-jH59LIT6Fh1rNyfue3qeREkhbeYEeJGDW62s55CQQr3S2Xen1pO8-gt1_FydMr4xkCJRgWGJR5W2pRPEIVsmrWnvcyt6b4ZejvmDItkDkqPbiOAmfSZtPb_5-okG1xcYeFImN5NbKpdmc");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Preparação para o show</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end items-center p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="A dramatic scene from the 'Shadow's Fall' music video" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSLXTJ-c-FRE4U45PuOjCg3WtOyiyhdupaKfKPUXNeyAUUoHhQKM8L1VpwUiHdP_uJAlVELcitIS1rm_Cg3ApYgmR0xeJ3z9dX13ifIW1LFH9a0nIMoCI_lXUku62Ez0Sw7ujleHjes6MlU_rMGdyrZx_VoTBJ7Qy2u9jZCbZUex7aBFL6IFmJ2CQluEnK4-aiN5mO-qo6ANTEtiUOIKcB7wQzzuYR5JllSzYYmEN_xMWZZF6Gw3TJbAWWV3EKBuRNMk50woiQZy0z");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<span class="material-symbols-outlined text-white text-5xl z-10 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-transform">play_circle</span>
+<p class="text-white text-base font-bold leading-tight z-10 text-center">Clipe 'Shadow's Fall'</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="The band signing autographs for fans at a meet and greet" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCChV1qWDY8GouJlY9VU78qkOkO1cXNlCEhWTul07uIGWwQq2nHuG8Ut_H1IXWDlrpt4Gqs1TdRi7VCvRgr_lLmOjkYHw4oWL1DHmfzVRePposGOjplustBo_k1eIiL_rxQ0PsRbCyYENpMSZ25AKCgiG9KyMilXRjDjTpJlrxARG90_04lPQMbTRy6BW3LldWq5cTc-i6Ymsjx6kU7qtKMCDwhGyG8Vm5Cao1UVa_Migvt_347Fhn59T9L_HVHx2y7KbpKDOrTrrAr");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Sessão de autógrafos</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="An energetic live performance in Curitiba with colored smoke" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjzDcltZF85wKCxTR1ZiX9Ka4s_ltJo7W4k0mFyU2l6hljrgLCXMhPIx0wFEHDOGeiokRu5sKmQ21YHlLT-Qt1oNDhKCyeF27sEQ_Ck_OvJmx5QZrQmJDXjNk1cs1uKi1Co6LxezbTnH6YiStTurkLTP3UpSqGQ2_t94i2oqWJfVHWdcPXk_6Xp_d7_zbUDJNxoW3TcHkozh5C_BRk8EfW0ijxwnYDPXJLSLua2WDoFJH0OcugAY79sYzoHhnQlDEUadEFT2DOQbH1");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Ao vivo em Curitiba</p>
+</div>
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded justify-end p-4 aspect-[3/4] overflow-hidden cursor-pointer" data-alt="A promotional photo for the new album with a metallic background" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6PeQ5dIvY0nuuiILlJabh6_SSfFXOegwr54jRsWaKcxyfDwWLWHxtWoVZ3YTx0yacAB1welrjPqu1JnTl-sKQY2wF8V5I-rtOUL9megPpbyhCx14LE9HVI0YY06OV4V6iqOHKxaTCisL-SJeN7QSlWomXJKDBIrR2nXInXweBfS3NHNl2KPz3DNl-TTugT8w-x3om9L4UPxwXsBcn3HtOVt20IqtIOROPh9nip50bEDuhqz6F9gBoP4bnVZWDP1fJfDtnfcDzTh7w");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-all"></div>
+<p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-3 z-10">Foto promocional do álbum</p>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 mt-8">
+<a class="flex size-10 items-center justify-center text-white/50 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded bg-primary" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded hover:bg-[#492222] transition-colors" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/80 rounded hover:bg-[#492222] transition-colors" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white/50 rounded">...</span>
+<a class="flex size-10 items-center justify-center text-white/50 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
